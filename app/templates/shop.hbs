@@ -1,0 +1,20 @@
+<article id="shop">
+  <div class="shop-details">
+    <h1>{{name}}</h1>
+    <p>Location: {{location}}</p>
+  </div>
+
+  <article id="reviews">
+    <p id="reviews-heading">Reviews</p>
+    <ul>
+    {{#each review in reviews}}
+      <li><article class="review">
+        <p>{{review.rating}}: {{review.description}}<p>
+        <p class='review-user'>-{{review.user.username}}</p>
+      </article></li>
+    {{/each}}
+    </ul>
+  </article>
+</article>
+
+{{outlet}}

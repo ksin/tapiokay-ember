@@ -1,0 +1,10 @@
+<article id="shops">
+  <h1>Shops</h1>
+  <ul>
+  {{#each}}
+    <li class="shop-row">{{#link-to 'shop' this}}{{name}}{{/link-to}}</li>
+  {{/each}}
+  </ul>
+</article>
+
+{{outlet}}

@@ -1,7 +1,7 @@
-import { default as JsonApiAdapter } from 'json_api_adapter';
 import config from '../config/environment';
+import DS from 'ember-data';
 
-export default JsonApiAdapter.extend({
+export default DS.ActiveModelAdapter.extend({
   host: config.APP.SERVER,
   namespace: "api"
 });

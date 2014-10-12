@@ -17,11 +17,4 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-app.import('bower_components/ember-json-api/dist/ember-json-api.js', {
-  exports: {
-    'json_api_adapter': [ 'default' ],
-    'json_api_serializer': [ 'default' ]
-  }
-});
-
 module.exports = app.toTree();

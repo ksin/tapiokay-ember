@@ -1,3 +1,101 @@
-html, body {
-  margin: 20px;
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300,400italic);
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700);
+
+ul, ol {
+  list-style: none;
+}
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input, dl, dt, dd, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+a img, :link img, :visited img, fieldset {
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+header, section, article, nav, footer, hgroup, details, summary, figure {
+  display: block;
+}
+
+html, body, body .ember-view, #main, article#shops, article#shop {
+  height: 100%;
+}
+
+body {
+  font-size: 15px;
+  font-family: Roboto;
+  background-color: #F06F07;
+}
+
+header .logo {
+  background-color: #A0D2F3;
+  color: #1A252B;
+  padding: 15px;
+}
+
+#shops {
+  padding-top: 15px;
+  background-color: #FBE997;
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+
+#shops h1 {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.shop-row {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.shop-row a {
+  text-decoration: none;
+  color: #333;
+  padding-left: 15px;
+}
+
+.shop-row:hover {
+  background-color: #DC4D07;
+}
+
+.shop-row:hover > a {
+  color: white;
+}
+
+#shop {
+  width: 78%;
+  display: inline-block;
+  padding-top: 15px;
+  padding-left: 15px;
+  background-color: #FBE997;
+  vertical-align: top;
+}
+
+.shop-details p {
+  margin-top: 15px;
+}
+
+#reviews {
+  padding-top: 30px;
+}
+
+#reviews-heading {
+  font-weight: 600;
+}
+
+.review {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.review-user {
+  margin-left: 20px;
 }
