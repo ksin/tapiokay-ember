@@ -1,6 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300,400italic);
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700);
 
+* {
+  color: #444;
+  text-decoration: none;
+  outline: none;
+}
+
 ul, ol {
   list-style: none;
 }
@@ -29,13 +35,20 @@ html, body, body .ember-view, #main, article#shops, article#shop {
 body {
   font-size: 15px;
   font-family: Roboto;
-  background-color: #F06F07;
+  background-color: #efefef;
+}
+
+header {
+  width: 20%;
 }
 
 header .logo {
   background-color: #A0D2F3;
-  color: #1A252B;
-  padding: 15px;
+  padding: 15px 0 15px 15px;
+}
+
+header .logo a:hover {
+  color: #333;
 }
 
 #shops {
@@ -49,6 +62,7 @@ header .logo {
 #shops h1 {
   padding-left: 15px;
   padding-bottom: 10px;
+  color: #F06F07;
 }
 
 .shop-row {
@@ -57,25 +71,25 @@ header .logo {
 }
 
 .shop-row a {
-  text-decoration: none;
-  color: #333;
   padding-left: 15px;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .shop-row:hover {
-  background-color: #DC4D07;
+  background-color: #F06F07;
 }
 
 .shop-row:hover > a {
   color: white;
 }
 
-#shop {
+#right-outlet {
   width: 78%;
   display: inline-block;
   padding-top: 15px;
   padding-left: 15px;
-  background-color: #FBE997;
   vertical-align: top;
 }
 
@@ -89,6 +103,8 @@ header .logo {
 
 #reviews-heading {
   font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .review {
@@ -98,4 +114,87 @@ header .logo {
 
 .review-user {
   margin-left: 20px;
+}
+
+.rating {
+  overflow: hidden;
+  width: 75px;
+  height: 16px;
+  position: relative;
+}
+
+.bubble-img {
+  position: absolute;
+}
+
+.bubbles-1 {
+  top: -14px;
+}
+
+.bubbles-2 {
+  top: -28px;
+}
+
+.bubbles-3 {
+  top: -42px;
+}
+
+.bubbles-4 {
+  top: -56px;
+}
+
+.bubbles-5 {
+  top: -70px;
+}
+
+dt label {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.add-shop {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.add-shop a {
+  color: #DC4D07;
+}
+
+.add-shop:hover {
+  text-decoration: underline;
+}
+
+.new-shop-form {
+  margin-top: 15px;
+}
+
+.new-shop-form dl {
+  margin-top: 10px;
+}
+
+.new-shop-form dd {
+  padding: 5px 0;
+}
+
+.create-shop-button {
+  margin-top: 15px;
+  border: 1px solid white;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #DC4D07;
+  color: white;
+  border-radius: 4px;
+}
+
+.create-shop-button:hover {
+  background-color: #F06F07;
+  color: white;
+}
+
+.create-shop-button:active {
+  background-color: white;
+  color: #DC4D07;
+  border: 1px solid #DC4D07;
 }

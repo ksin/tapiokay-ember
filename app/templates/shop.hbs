@@ -8,10 +8,7 @@
     <p id="reviews-heading">Reviews</p>
     <ul>
     {{#each review in reviews}}
-      <li><article class="review">
-        <p>{{review.rating}}: {{review.description}}<p>
-        <p class='review-user'>-{{review.user.username}}</p>
-      </article></li>
+      {{review-details content=review}}
     {{/each}}
     </ul>
   </article>

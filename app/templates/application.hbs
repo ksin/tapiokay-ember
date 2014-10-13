@@ -1,6 +1,8 @@
 <header>
-  <h1 class="logo">tapiokay</h1>
+  <h1 class="logo">{{#link-to 'shops'}}tapiokay</h1>{{/link-to}}
 </header>
+
+<p class="add-shop">{{#link-to 'shops.new'}}Add shop{{/link-to}}</p>
 
 <section id="main">
   {{outlet}}

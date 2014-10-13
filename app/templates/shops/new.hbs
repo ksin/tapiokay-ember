@@ -1,0 +1,19 @@
+<article id="new-shop">
+  <h1>New shop<h1>
+
+  <form class="new-shop-form">
+    <fieldset>
+      <dl>
+        <dt><label>Name:</label></dt>
+        <dd>{{view Ember.TextField value=fields.name}}</dd>
+      </dl>
+      <dl>
+        <dt><label>Location:</label></dt>
+        <dd>{{view Ember.TextField value=fields.location}}</dd>
+      </dl>
+    </fieldset>
+    <fieldset>
+      <input class="create-shop-button" type='button' value='Add shop' {{action createShop}}/>
+    </fieldset>
+  </form>
+</article>
